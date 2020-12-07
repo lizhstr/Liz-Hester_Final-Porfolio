@@ -309,7 +309,7 @@ form input, textarea{
 
 /*Mobile Vertical*/
 
-@media only screen and (min-device-width: 320px) and (max-width:575px){
+@media (min-device-width: 320px) and (max-width:575px){
     body{
         background: #EFF2F3;
         margin: 0;
