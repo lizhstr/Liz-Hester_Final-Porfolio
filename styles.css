@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    background: #EFF2F3;
+    margin: 0;
+    background-image: url(/Desert.png);
+    background-position: bottom;
+    background-position-y: -100px;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#aboutSection{
+    height: 100vh;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 285px;
+    height: 288px;
+    left: 1005px;
+    top: 0px;
+    background: #F2AD8C;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 117px auto auto auto;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #EFF2F3;
+}
+
+#menu a{
+    color: #EFF2F3;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+}
+
+#nameAndAbout{
+    display: flex;
+    position: absolute;
+    width: 1140px;
+    height: 314px;
+    left: 150px;
+    top: 279px;
+}
+
+#nameHeader{
+    width: 475px;
+}
+
+#nameHeader h1{
+    margin: 0;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 104px;
+    color: #33444C;
+}
+
+#aboutParagraph{
+    width: 665px;
+}
+
+#aboutParagraph p{
+    
+    margin-top: 120px;
+    margin-bottom: 0;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 48px;
+    color: rgba(51, 68, 76, 0.8);
+}
+
+#projectsSection{
+    background: #EFF2F3;
+    padding: 1px 0 0 0;
+    margin: -1px auto -1x auto;
+    overflow: auto;
+}
+
+.projectBlock{
+    display: flex;
+    width: 1140px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 142px;
+}
+
+#lastProject{
+    margin-bottom: 142px;
+}
+
+.imgProject{
+    height: 360px;
+    width: 50%;
+}
+
+.textProject{
+    width: 50%;
+    margin-right: 0;
+    padding-left: 95px;
+}
+
+.textProject h2{
+    margin: 0;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #33444C;
+}
+
+.textProject p{
+    margin-top: 18px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(51, 68, 76, 0.8);
+}
+
+.btnSeeMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 168px;
+    background: #EC9D79;
+    border: 2px solid #F7D7C5;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 0px #F7D7C5;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.085em;
+}
+
+.btnSeeMore a{
+    color: #EFF2F3;
+    text-decoration: none;
+}
+
+.btnSeeMore:hover{
+    text-decoration: underline;
+}
+
+#contactSection{
+
+}
+
+#formAndInfo{
+    display: flex;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formAndInfo:before {
+    content:"";
+    background-color:#CCDAE0;
+    position: absolute;
+    height: 754px;
+    width: 2500px;
+    left: -2000px;
+    z-index: -1;
+}
+
+
+form{
+    height: 754px;
+    width: 712px;
+    background: #CCDAE0;
+}
+
+form h3{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37.5px;
+    line-height: 48px;
+    color: #33444C;
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+
+form input, textarea{
+    width: 570px;
+    margin-top: 40px;
+    margin-right: 142px;
+    padding: 0;
+    margin-left: auto;
+    background: #EFF2F3;
+    border-style: none;
+}
+
+::placeholder{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(51, 68, 76, 0.8);
+    padding-left: 16px;
+}
+
+#name, #email{
+    height: 56px;
+}
+
+#message{
+    height: 148px;
+    padding-top: 12px;
+}
+
+#btnSend{
+    margin: 56px auto 0 200px;
+    height: 56px;
+    width: 168px;
+    left: 0px;
+    top: 0px;
+    background: #EFF2F3;
+    border: 3px solid #33444C;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.085em;
+    color: #33444C;
+}
+
+::value{
+    text-align: center;
+}
+
+#contactInfo{
+    width: 428px;
+    margin-bottom: 180px;
+    margin-top: auto;
+}
+
+#contactInfo h2{
+    margin-left: 142px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #33444C;
+}
+
+#contactInfo h4{
+    margin-left: 142px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #33444C;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#contactInfo ul{
+    margin-left: 142px;
+    padding: 0;
+    list-style: none;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(51, 68, 76, 0.8);
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+/*Mobile Vertical*/
+
+@media only screen and (min-device-width: 320px) and (max-width:575px){
+    body{
+        background: #EFF2F3;
+        margin: 0;
+        background-image: url(/Desert.png);
+        background-position: bottom;
+        background-position-y: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #aboutSection{
+
+    }
+    
+    #menu{
+        display: flex;
+        width: 100vw;
+        height: 48px;
+        background: #F2AD8C;
+    }
+    
+    #menu ul{
+        /*
+        list-style: none;
+        padding: 0;
+        margin: 117px auto auto auto;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: #EFF2F3;
+        */
+    }
+    
+    #menu a{
+        /*
+        color: #EFF2F3;
+        text-decoration: none;
+        */
+    }
+    
+    #menu a:hover{
+        /*
+        text-decoration: underline;
+        */
+    }
+    
+    #nameAndAbout{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+    
+    #nameHeader{
+        width: 320px;
+    }
+    
+    #nameHeader h1{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        color: #33444C;
+    }
+    
+    #aboutParagraph{
+        width: 320px;
+    }
+    
+    #projectsSection{
+        background: #EFF2F3;
+    }
+    
+    .projectBlock{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-top: 142px;
+    }
+    
+    #lastProject{
+        margin-bottom: 142px;
+    }
+    
+    .imgProject{
+   
+    }
+    
+    .textProject{
+    
+    }
+    
+    .textProject h2{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #33444C;
+    }
+    
+    .textProject p{
+        margin-top: 14px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(51, 68, 76, 0.8);
+    }
+    
+    .btnSeeMore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 168px;
+        background: #EC9D79;
+        border: 2px solid #F7D7C5;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 0px #F7D7C5;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.085em;
+    }
+    
+    .btnSeeMore a{
+        color: #EFF2F3;
+        text-decoration: none;
+    }
+    
+    .btnSeeMore:hover{
+        text-decoration: underline;
+    }
+    
+    #contactSection{
+    
+    }
+    
+    #formAndInfo{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #formAndInfo:before {
+    
+    }
+    
+    form{
+        background: #CCDAE0;
+    }
+    
+    form h3{
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        color: #33444C;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+    
+    form input, textarea{
+        margin-top: 40px;
+        padding: 0;
+        margin-left: auto;
+        background: #EFF2F3;
+        border-style: none;
+    }
+    
+    ::placeholder{
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(51, 68, 76, 0.8);
+        padding-left: 16px;
+    }
+    
+    #name, #email{
+        height: 56px;
+    }
+    
+    #message{
+        height: 148px;
+        padding-top: 12px;
+    }
+    
+    #btnSend{
+        margin: 56px auto 0 200px;
+        height: 56px;
+        width: 168px;
+        left: 0px;
+        top: 0px;
+        background: #EFF2F3;
+        border: 3px solid #33444C;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.085em;
+        color: #33444C;
+    }
+    
+    ::value{
+        text-align: center;
+    }
+    
+    #contactInfo{
+        margin-bottom: 180px;
+        margin-top: auto;
+    }
+    
+    #contactInfo h2{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #33444C;
+    }
+    
+    #contactInfo h4{
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #33444C;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    
+    #contactInfo ul{
+        padding: 0;
+        list-style: none;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(51, 68, 76, 0.8);
+        margin-top: 11px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px){
+    #nameHeader h1{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 104px;
+        color: #33444C;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px){
+    #nameHeader h1{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 94.5px;
+        line-height: 104px;
+        color: #33444C;
+    }
+}
+
+
+/*Tablet horizontal*/
+@media only screen and (min-width: 992px) and (max-width:1199px){
+    body{
+        background: #EFF2F3;
+        margin: 0;
+        background-image: url(/Desert.png);
+        background-position: bottom;
+        background-position-y: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    #aboutSection{
+        height: 100vh;
+    }
+    
+    #menu{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 285px;
+        height: 288px;
+        left: 1005px;
+        top: 0px;
+        background: #F2AD8C;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #menu ul{
+        list-style: none;
+        padding: 0;
+        margin: 117px auto auto auto;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: #EFF2F3;
+    }
+    
+    #menu a{
+        color: #EFF2F3;
+        text-decoration: none;
+    }
+    
+    #menu a:hover{
+        text-decoration: underline;
+    }
+    
+    #nameAndAbout{
+        display: flex;
+        position: absolute;
+        width: 1140px;
+        height: 314px;
+        left: 150px;
+        top: 279px;
+    }
+    
+    #nameHeader{
+        width: 475px;
+    }
+    
+    #nameHeader h1{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 104px;
+        color: #33444C;
+    }
+    
+    #aboutParagraph{
+        width: 665px;
+    }
+    
+    #aboutParagraph p{
+        
+        margin-top: 120px;
+        margin-bottom: 0;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 48px;
+        color: rgba(51, 68, 76, 0.8);
+    }
+    
+    #projectsSection{
+        background: #EFF2F3;
+        padding: 1px 0 0 0;
+        margin: -1px auto -1x auto;
+        overflow: auto;
+    }
+    
+    .projectBlock{
+        display: flex;
+        width: 1140px;
+        height: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 142px;
+    }
+    
+    #lastProject{
+        margin-bottom: 142px;
+    }
+    
+    .imgProject{
+        height: 360px;
+        width: 50%;
+    }
+    
+    .textProject{
+        width: 50%;
+        margin-right: 0;
+        padding-left: 95px;
+    }
+    
+    .textProject h2{
+        margin: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #33444C;
+    }
+    
+    .textProject p{
+        margin-top: 18px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(51, 68, 76, 0.8);
+    }
+    
+    .btnSeeMore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 168px;
+        background: #EC9D79;
+        border: 2px solid #F7D7C5;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 0px #F7D7C5;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.085em;
+    }
+    
+    .btnSeeMore a{
+        color: #EFF2F3;
+        text-decoration: none;
+    }
+    
+    .btnSeeMore:hover{
+        text-decoration: underline;
+    }
+    
+    #contactSection{
+    
+    }
+    
+    #formAndInfo{
+        display: flex;
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #formAndInfo:before {
+        content:"";
+        background-color:#CCDAE0;
+        position: absolute;
+        height: 754px;
+        width: 2500px;
+        left: -2000px;
+        z-index: -1;
+    }
+    
+    
+    form{
+        height: 754px;
+        width: 712px;
+        background: #CCDAE0;
+    }
+    
+    form h3{
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 37.5px;
+        line-height: 48px;
+        color: #33444C;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+    
+    form input, textarea{
+        width: 570px;
+        margin-top: 40px;
+        margin-right: 142px;
+        padding: 0;
+        margin-left: auto;
+        background: #EFF2F3;
+        border-style: none;
+    }
+    
+    ::placeholder{
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(51, 68, 76, 0.8);
+        padding-left: 16px;
+    }
+    
+    #name, #email{
+        height: 56px;
+    }
+    
+    #message{
+        height: 148px;
+        padding-top: 12px;
+    }
+    
+    #btnSend{
+        margin: 56px auto 0 200px;
+        height: 56px;
+        width: 168px;
+        left: 0px;
+        top: 0px;
+        background: #EFF2F3;
+        border: 3px solid #33444C;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.085em;
+        color: #33444C;
+    }
+    
+    ::value{
+        text-align: center;
+    }
+    
+    #contactInfo{
+        width: 428px;
+        margin-bottom: 180px;
+        margin-top: auto;
+    }
+    
+    #contactInfo h2{
+        margin-left: 142px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #33444C;
+    }
+    
+    #contactInfo h4{
+        margin-left: 142px;
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #33444C;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    
+    #contactInfo ul{
+        margin-left: 142px;
+        padding: 0;
+        list-style: none;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(51, 68, 76, 0.8);
+        margin-top: 11px;
+        margin-bottom: 0;
+    }
+
+}
+
