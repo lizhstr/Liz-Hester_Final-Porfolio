@@ -399,7 +399,7 @@ form input, textarea{
     }
     
     #lastProject{
-        margin-bottom: 142px;
+
     }
     
     .imgProject{
@@ -551,7 +551,7 @@ form input, textarea{
         font-family: Karla;
         font-style: normal;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 24px;
         color: #33444C;
     }
     
@@ -559,7 +559,7 @@ form input, textarea{
         font-family: Karla;
         font-style: normal;
         font-weight: normal;
-        font-size: 22px;
+        font-size: 20px;
         text-transform: uppercase;
         color: #33444C;
         margin-top: 5px;
