@@ -3,30 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 body{
-    background: #EFF2F3;
+    padding: 0;
     margin: 0;
+}
+
+#aboutSection{
+    background: #EFF2F3;
     background-image: url(/Desert.png);
     background-position: bottom;
     background-position-y: -100px;
     background-size: 100vw;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#aboutSection{
-    height: 100vh;
 }
 
 #menu{
+    z-index: 1;
     display: flex;
     justify-content: center;
     position: absolute;
     width: 285px;
     height: 288px;
-    left: 1005px;
+    left: 50%;
     top: 0px;
     background: #F2AD8C;
-    margin-left: auto;
+    margin-left: 285px;
     margin-right: auto;
 }
 
@@ -45,6 +45,10 @@ body{
     color: #EFF2F3;
 }
 
+#menu li{
+
+}
+
 #menu a{
     color: #EFF2F3;
     text-decoration: none;
@@ -59,8 +63,11 @@ body{
     position: absolute;
     width: 1140px;
     height: 314px;
-    left: 150px;
-    top: 279px;
+    top: 292px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nameHeader{
@@ -106,11 +113,11 @@ body{
     height: 360px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 142px;
+    margin-top: 136px;
 }
 
 #lastProject{
-    margin-bottom: 142px;
+    margin-bottom: 136px;
 }
 
 .imgProject{
@@ -173,7 +180,12 @@ body{
 }
 
 #contactSection{
-
+    background: #EFF2F3;
+    background-image: url(/Desert.png);
+    background-position: bottom;
+    background-position-y: -100px;
+    background-size: 100vw;
+    background-repeat: no-repeat;
 }
 
 #formAndInfo{
@@ -183,21 +195,11 @@ body{
     margin-right: auto;
 }
 
-#formAndInfo:before {
-    content:"";
-    background-color:#CCDAE0;
-    position: absolute;
-    height: 754px;
-    width: 2500px;
-    left: -2000px;
-    z-index: -1;
-}
-
 
 form{
-    height: 754px;
-    width: 712px;
+    width: 760px;
     background: #CCDAE0;
+    margin-top: 40px;
 }
 
 form h3{
@@ -207,18 +209,17 @@ form h3{
     font-size: 37.5px;
     line-height: 48px;
     color: #33444C;
-    margin-top: 75px;
-    margin-bottom: 0;
+    margin: 59px 95px 0 95px;
 }
+
 
 form input, textarea{
     width: 570px;
-    margin-top: 40px;
-    margin-right: 142px;
     padding: 0;
     margin-left: auto;
     background: #EFF2F3;
     border-style: none;
+    margin: 40px 95px 0 95px;
 }
 
 ::placeholder{
@@ -239,9 +240,13 @@ form input, textarea{
     padding-top: 12px;
 }
 
+#divBtnSend{
+    margin: 0 95px 0 95px;
+}
+
 #btnSend{
-    margin: 56px auto 0 200px;
-    height: 56px;
+    margin: 40px auto 64px 200px;
+    height: 48px;
     width: 168px;
     left: 0px;
     top: 0px;
@@ -260,18 +265,30 @@ form input, textarea{
     color: #33444C;
 }
 
+#btnSend:hover{
+    text-decoration: underline;
+}
+
 ::value{
     text-align: center;
 }
 
 #contactInfo{
     width: 428px;
-    margin-bottom: 180px;
+    margin-bottom: 145px;
     margin-top: auto;
 }
 
+#divNameAndTitle{
+
+}
+
+#divContactInfo{
+
+}
+
 #contactInfo h2{
-    margin-left: 142px;
+    margin-left: 95px;
     margin-top: 0;
     margin-bottom: 0;
     font-family: Karla;
@@ -282,19 +299,16 @@ form input, textarea{
 }
 
 #contactInfo h4{
-    margin-left: 142px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     text-transform: uppercase;
     color: #33444C;
-    margin-top: 5px;
-    margin-bottom: 0;
+    margin: 5px auto 0 95px;
 }
 
 #contactInfo ul{
-    margin-left: 142px;
     padding: 0;
     list-style: none;
     font-family: Lora;
@@ -303,369 +317,43 @@ form input, textarea{
     font-size: 18px;
     line-height: 32px;
     color: rgba(51, 68, 76, 0.8);
-    margin-top: 11px;
-    margin-bottom: 0;
+    margin: 19px auto 0 95px;
 }
 
-/*Mobile Vertical*/
+footer{
+    height: 104px;
+}
 
-@media (min-device-width: 320px) and (max-width:575px){
-    body{
-        background: #EFF2F3;
-        margin: 0;
-        background-image: url(/Desert.png);
-        background-position: bottom;
-        background-position-y: -100px;
-        background-size: 100vw;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow-x: hidden;
-    }
-
-    #aboutSection{
-
-    }
+/*Tablet Horizontal*/
+@media only screen and (max-width: 1199px){
     
     #menu{
-        display: flex;
-        width: 100vw;
-        height: 48px;
-        background: #F2AD8C;
-    }
-    
-    #menu ul{
-        /*
-        list-style: none;
-        padding: 0;
-        margin: 117px auto auto auto;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
-        line-height: 40px;
-        letter-spacing: 0.03em;
-        color: #EFF2F3;
-        */
-    }
-    
-    #menu a{
-        /*
-        color: #EFF2F3;
-        text-decoration: none;
-        */
-    }
-    
-    #menu a:hover{
-        /*
-        text-decoration: underline;
-        */
-    }
-    
-    #nameAndAbout{
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-    }
-    
-    #nameHeader{
-        width: 320px;
-    }
-    
-    #nameHeader h1{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 24px;
-        color: #33444C;
-    }
-    
-    #aboutParagraph{
-        width: 320px;
-    }
-    
-    #projectsSection{
-        background: #EFF2F3;
-    }
-    
-    .projectBlock{
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        margin-top: 142px;
-    }
-    
-    #lastProject{
-
-    }
-    
-    .imgProject{
-   
-    }
-    
-    .textProject{
-    
-    }
-    
-    .textProject h2{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        color: #33444C;
-    }
-    
-    .textProject p{
-        margin-top: 14px;
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        color: rgba(51, 68, 76, 0.8);
-    }
-    
-    .btnSeeMore{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 48px;
-        width: 168px;
-        background: #EC9D79;
-        border: 2px solid #F7D7C5;
-        box-sizing: border-box;
-        box-shadow: 6px 6px 0px #F7D7C5;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        text-transform: uppercase;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.085em;
-    }
-    
-    .btnSeeMore a{
-        color: #EFF2F3;
-        text-decoration: none;
-    }
-    
-    .btnSeeMore:hover{
-        text-decoration: underline;
-    }
-    
-    #contactSection{
-    
-    }
-    
-    #formAndInfo{
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #formAndInfo:before {
-    
-    }
-    
-    form{
-        background: #CCDAE0;
-    }
-    
-    form h3{
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 48px;
-        color: #33444C;
-        margin-top: 75px;
-        margin-bottom: 0;
-    }
-    
-    form input, textarea{
-        margin-top: 40px;
-        padding: 0;
-        margin-left: auto;
-        background: #EFF2F3;
-        border-style: none;
-    }
-    
-    ::placeholder{
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        color: rgba(51, 68, 76, 0.8);
-        padding-left: 16px;
-    }
-    
-    #name, #email{
-        height: 56px;
-    }
-    
-    #message{
-        height: 148px;
-        padding-top: 12px;
-    }
-    
-    #btnSend{
-        margin: 56px auto 0 200px;
-        height: 56px;
-        width: 168px;
-        left: 0px;
-        top: 0px;
-        background: #EFF2F3;
-        border: 3px solid #33444C;
-        box-sizing: border-box;
-        border-radius: 50px;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.085em;
-        color: #33444C;
-    }
-    
-    ::value{
-        text-align: center;
-    }
-    
-    #contactInfo{
-        margin-bottom: 180px;
-        margin-top: auto;
-    }
-    
-    #contactInfo h2{
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        color: #33444C;
-    }
-    
-    #contactInfo h4{
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #33444C;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    
-    #contactInfo ul{
-        padding: 0;
-        list-style: none;
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        color: rgba(51, 68, 76, 0.8);
-        margin-top: 11px;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width:767px){
-    #nameHeader h1{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 70px;
-        line-height: 104px;
-        color: #33444C;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width:991px){
-    #nameHeader h1{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 94.5px;
-        line-height: 104px;
-        color: #33444C;
-    }
-}
-
-
-/*Tablet horizontal*/
-@media only screen and (min-width: 992px) and (max-width:1199px){
-    body{
-        background: #EFF2F3;
-        margin: 0;
-        background-image: url(/Desert.png);
-        background-position: bottom;
-        background-position-y: -100px;
-        background-size: 100vw;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    
-    #aboutSection{
-        height: 100vh;
-    }
-    
-    #menu{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        width: 285px;
-        height: 288px;
-        left: 1005px;
+        width: 240px;
+        height: 248px;
+        left: 50%;
         top: 0px;
         background: #F2AD8C;
-        margin-left: auto;
+        margin-left: 240px;
         margin-right: auto;
     }
     
     #menu ul{
-        list-style: none;
-        padding: 0;
-        margin: 117px auto auto auto;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
+        margin: 86px auto auto auto;
+        font-size: 17.5px;
         line-height: 40px;
         letter-spacing: 0.03em;
-        color: #EFF2F3;
-    }
-    
-    #menu a{
-        color: #EFF2F3;
-        text-decoration: none;
-    }
-    
-    #menu a:hover{
-        text-decoration: underline;
     }
     
     #nameAndAbout{
         display: flex;
         position: absolute;
-        width: 1140px;
+        width: 960px;
         height: 314px;
-        left: 150px;
-        top: 279px;
+        top: 248px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #nameHeader{
@@ -673,29 +361,19 @@ form input, textarea{
     }
     
     #nameHeader h1{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 120px;
-        line-height: 104px;
-        color: #33444C;
+        font-size: 101px;
+        line-height: 96px;
     }
     
     #aboutParagraph{
-        width: 665px;
+       
     }
     
     #aboutParagraph p{
-        
-        margin-top: 120px;
-        margin-bottom: 0;
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 27px;
+        width: 559px;
+        margin-top: 112px;
+        font-size: 24px;
         line-height: 48px;
-        color: rgba(51, 68, 76, 0.8);
     }
     
     #projectsSection{
@@ -707,130 +385,71 @@ form input, textarea{
     
     .projectBlock{
         display: flex;
-        width: 1140px;
-        height: 360px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 142px;
+        width: 960px;
+        height: 304px;
+        margin: 95px auto 0 auto;
     }
     
     #lastProject{
-        margin-bottom: 142px;
+        margin-bottom: 95px;
     }
     
     .imgProject{
-        height: 360px;
+        height: 303.16px;
         width: 50%;
     }
     
     .textProject{
         width: 50%;
         margin-right: 0;
-        padding-left: 95px;
+        padding-left: 80px;
     }
     
     .textProject h2{
-        margin: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
         font-size: 28px;
-        color: #33444C;
     }
     
     .textProject p{
-        margin-top: 18px;
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        color: rgba(51, 68, 76, 0.8);
-    }
-    
-    .btnSeeMore{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 48px;
-        width: 168px;
-        background: #EC9D79;
-        border: 2px solid #F7D7C5;
-        box-sizing: border-box;
-        box-shadow: 6px 6px 0px #F7D7C5;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        text-transform: uppercase;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.085em;
-    }
-    
-    .btnSeeMore a{
-        color: #EFF2F3;
-        text-decoration: none;
-    }
-    
-    .btnSeeMore:hover{
-        text-decoration: underline;
+        margin-top: 14px;
+        font-size: 16px;
+        line-height: 24px;
     }
     
     #contactSection{
-    
+        background: #EFF2F3;
+        margin: 0;
+        background-image: url(/Desert.png);
+        background-position: bottom;
+        background-position-y: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
     }
     
     #formAndInfo{
-        display: flex;
-        width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 960px;
     }
-    
-    #formAndInfo:before {
-        content:"";
-        background-color:#CCDAE0;
-        position: absolute;
-        height: 754px;
-        width: 2500px;
-        left: -2000px;
-        z-index: -1;
-    }
-    
     
     form{
-        height: 754px;
-        width: 712px;
+        width: 560px;
         background: #CCDAE0;
+        margin-top: 40px;
     }
     
     form h3{
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 37.5px;
-        line-height: 48px;
+        font-size: 26px;
+        line-height: 32px;
         color: #33444C;
-        margin-top: 75px;
-        margin-bottom: 0;
+        margin: 50px 80px 0 80px;
     }
     
+    
     form input, textarea{
-        width: 570px;
-        margin-top: 40px;
-        margin-right: 142px;
-        padding: 0;
-        margin-left: auto;
-        background: #EFF2F3;
-        border-style: none;
+        width: 400px;
+        margin: 24px 80px 0 80px;
     }
     
     ::placeholder{
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         color: rgba(51, 68, 76, 0.8);
         padding-left: 16px;
     }
@@ -840,77 +459,634 @@ form input, textarea{
     }
     
     #message{
-        height: 148px;
+        height: 128px;
         padding-top: 12px;
     }
     
-    #btnSend{
-        margin: 56px auto 0 200px;
-        height: 56px;
-        width: 168px;
-        left: 0px;
-        top: 0px;
-        background: #EFF2F3;
-        border: 3px solid #33444C;
-        box-sizing: border-box;
-        border-radius: 50px;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.085em;
-        color: #33444C;
+    #divBtnSend{
+        margin: 0 80px 0 80px;
     }
     
-    ::value{
-        text-align: center;
+    #btnSend{
+        margin: 24px auto 40px 117px;
     }
     
     #contactInfo{
-        width: 428px;
-        margin-bottom: 180px;
+        width: 400px;
+        margin-bottom: 110px;
         margin-top: auto;
     }
     
     #contactInfo h2{
-        margin-left: 142px;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: bold;
+        margin-left: 80px; 
         font-size: 28px;
-        color: #33444C;
     }
     
     #contactInfo h4{
-        margin-left: 142px;
-        font-family: Karla;
-        font-style: normal;
-        font-weight: normal;
         font-size: 22px;
         text-transform: uppercase;
-        color: #33444C;
-        margin-top: 5px;
-        margin-bottom: 0;
+        margin: 5px auto 0 80px;
     }
     
     #contactInfo ul{
-        margin-left: 142px;
-        padding: 0;
-        list-style: none;
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 32px;
+        margin: 12px auto 0 80px;
+    }
+    
+    footer{
+        height: 72px;
+    }
+}
+
+/*Tablet Verticle*/
+@media only screen and (max-width: 991px){
+    
+    #aboutSection{
+        height: 704px;
+        background-position: bottom;
+        background-size: 100vw;
+    }
+    
+    #menu{
+        width: 180px;
+        height: 176px;
+        left: 50%;
+        top: 0px;
+        margin-left: 180px;
+        margin-right: auto;
+    }
+    
+    #menu ul{
+        margin: 50px auto auto auto;
+        font-size: 17.5px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+ 
+    }
+    
+    
+    #nameAndAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        width: 720px;
+        height: 314px;
+        top: 177px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #nameHeader{
+        width: 475px;
+        margin: 0 auto 0 0;
+    }
+    
+    #nameHeader h1{
+        font-size: 94.5px;
+        line-height: 80px;
+        color: #33444C;
+    }
+    
+    #aboutParagraph{
+       
+    }
+    
+    #aboutParagraph p{
+        width: 479px;
+        margin: 48px 0 0 auto;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .projectBlock{
+        display: flex;
+        width: 720px;
+        height: 229px;
+        margin: 95px auto 0 auto;
+    }
+    
+    #lastProject{
+        margin-bottom: 95px;
+    }
+    
+    .imgProject{
+        height: 227.37px;
+        width: 50%;
+    }
+    
+    .textProject{
+        width: 50%;
+        margin-right: 0;
+        padding-left: 60px;
+    }
+    
+    .textProject h2{
+        font-size: 24px;
+    }
+    
+    .textProject p{
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    #contactSection{
+        background: #EFF2F3;
+        margin: 0;
+        background-image: url(/Desert.png);
+        background-position: bottom;
+        background-position-y: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+    
+    #formAndInfo{
+        width: 720px;
+    }
+    
+    form{
+        width: 420px;
+        background: #CCDAE0;
+        margin-top: 0;
+    }
+    
+    form h3{
+        font-size: 19.5px;
+        line-height: 24px;
+        color: #33444C;
+        margin: 38px 60px 0 60px;
+    }
+    
+    
+    form input, textarea{
+        width: 300px;
+        margin: 16px 60px 0 60px;
+    }
+    
+    ::placeholder{
+        font-size: 14px;
         color: rgba(51, 68, 76, 0.8);
-        margin-top: 11px;
-        margin-bottom: 0;
+        padding-left: 16px;
+    }
+    
+    #name, #email{
+        height: 48px;
+    }
+    
+    #message{
+        height: 104px;
+        padding-top: 12px;
+    }
+    
+    #divBtnSend{
+        margin: 0 60px 0 60px;
+    }
+    
+    #btnSend{
+        margin: 24px auto 40px 66px;
+    }
+    
+    #contactInfo{
+        width: 300px;
+        margin-bottom: 110px;
+        margin-top: auto;
+    }
+    
+    #contactInfo h2{
+        margin-left: 60px; 
+        font-size: 24px;
+    }
+    
+    #contactInfo h4{
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 2px auto 0 60px;
+    }
+    
+    #contactInfo ul{
+        font-size: 14px;
+        line-height: 32px;
+        margin: 13px auto 0 60px;
+    }
+    
+    footer{
+        height: 48px;
+    }
+}
+
+/*Mobile Horizontal*/
+
+@media only screen and (max-width: 767px){
+    #aboutSection{
+        height: 100vh;
+        background-position: bottom;
+        background-size: 100vw;
+    }
+    
+    #menu{
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 48px;
+        left: 0;
+        top: 0px;
+        margin: 0 0 0 0;
+    }
+    
+    #menu ul{
+        font-size: 17.5px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        margin: 0 !important;
+    }
+    
+    #menu li{
+        display: inline;
+        margin: auto 40px auto 40px;
+    }
+
+    #nameAndAbout{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        position: absolute;
+        width: 540px;
+        top: 98px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #nameHeader{
+        width: 225px;
+        margin: 0;
+    }
+    
+    #nameHeader h1{
+        font-size: 70px;
+        line-height: 64px;
+        color: #33444C;
+    }
+    
+    #aboutParagraph{
+        width: 315px;
+    }
+    
+    #aboutParagraph p{
+        width: 290px;
+        padding: 78px 0 0 25px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .projectBlock{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 450px;
+        height: 525px;
+        margin: 64px auto 0 auto;
+    }
+    
+    #lastProject{
+        margin-bottom: 64px;
+    }
+    
+    .imgProject{
+        height: 284.21px;
+        width: 100%;
+    }
+    
+    .textProject{
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    
+    .textProject h2{
+        font-size: 24px;
+    }
+    
+    .textProject p{
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .btnSeeMore{
+        margin: 17px 0 40px 0;
+    }
+
+    #contactSection{
+        background: #EFF2F3;
+        margin: 0;
+        background-image: url(/Desert.png);
+        background-position: bottom;
+        background-position-y: -100px;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+    
+    #formAndInfo{
+        width: 100vw;
+        flex-direction: column;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background: #CCDAE0;
+        margin-top: 0;
+    }
+    
+    form h3{
+        font-size: 23.5px;
+        line-height: 32px;
+        color: #33444C;
+        margin: 40px auto 0 auto;
+        width: 450px;
+    }
+    
+    
+    form input, textarea{
+        width: 450px;
+        margin: 16px 60px 0 60px;
+    }
+    
+    ::placeholder{
+        font-size: 14px;
+        color: rgba(51, 68, 76, 0.8);
+        padding-left: 16px;
+    }
+    
+    #name, #email{
+        height: 48px;
+    }
+    
+    #message{
+        height: 104px;
+        padding-top: 12px;
+    }
+    
+    #divBtnSend{
+        margin: 0 60px 0 60px;
+    }
+    
+    #btnSend{
+        margin: 32px auto 56px auto;
+    }
+    
+    #contactInfo{
+        display: flex;
+        width: 540px;
+        margin: 0 auto 0 auto;
+    }
+
+    #divNameAndTitle{
+        width: 50%;
+    }
+    
+    #divContactInfo{
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    #contactInfo h2{
+        margin: 18px auto 0 0;
+        margin-left: 0; 
+        font-size: 24px;
+    }
+    
+    #contactInfo h4{
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 2px auto 0 0;
+    }
+    
+    #contactInfo ul{
+        text-align: right;
+        font-size: 14px;
+        line-height: 32px;
+        margin: 34px 0 18px auto;
+    }
+    
+    footer{
+        height: 0;
     }
 
 }
+
+/*Mobile Verticle*/
+
+@media only screen and (max-width: 575px){
+  
+
+    #aboutSection{
+        margin: 0 15px 0 15px;
+        height: auto;
+        background-position: bottom;
+        background-size: 100vw;
+
+    }
+    
+    #menu{
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 48px;
+        left: 0;
+        top: 0px;
+        margin: 0 0 0 0;
+    }
+    
+    #menu ul{
+        font-size: 17.5px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        margin: 0 !important;
+    }
+    
+    #menu li{
+        display: inline;
+        margin: auto 40px auto 40px;
+    }
+
+    #nameAndAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: 320px;
+        top: 81px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #nameHeader{
+        width: 320px;
+        margin: 0;
+    }
+    
+    #nameHeader h1{
+        font-size: 70px;
+        line-height: 64px;
+        color: #33444C;
+    }
+    
+    #aboutParagraph{
+        width: 320px;
+        margin-top: 43px;
+    }
+    
+    #aboutParagraph p{
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+.projectBlock{
+    display: flex;
+    width: 100vwx;
+    height: 229px;
+    margin: 61px 15px 0 15px;
+}
+
+#lastProject{
+    margin-bottom: 61px;
+}
+
+.imgProject{
+    max-width: 100%;
+    height: auto;
+}
+
+.textProject{
+    width: 100vw;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.textProject h2{
+    font-size: 24px;
+}
+
+.textProject p{
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#contactSection{
+    background: #EFF2F3;
+    margin: 0;
+    background-image: url(/Desert.png);
+    background-position: bottom;
+    background-position-y: -100px;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+#formAndInfo{
+    width: 100vw;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: #CCDAE0;
+    margin-top: 0;
+    padding: 0 15px 0 15px;
+}
+
+form h3{
+    font-size: 19.5px;
+    line-height: 24px;
+    color: #33444C;
+    margin-top: 38px;
+}
+
+
+form input, textarea{
+    width: 300px;
+    margin: 16px 60px 0 60px;
+}
+
+::placeholder{
+    font-size: 14px;
+    color: rgba(51, 68, 76, 0.8);
+    padding-left: 16px;
+}
+
+#name, #email{
+    height: 48px;
+}
+
+#message{
+    height: 104px;
+    padding-top: 12px;
+}
+
+#divBtnSend{
+    margin: 0 auto 0 auto;
+}
+
+#btnSend{
+    margin: 24px auto 40px auto;
+}
+
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 0;
+    margin-top: auto;
+    margin: 0 15px 0 15px;
+}
+
+#divNameAndTitle{
+    width: 100vw;
+}
+
+#divContactInfo{
+    width: 100vw;
+}
+
+#contactInfo h2{
+    margin: 18px 0 0 0;
+    font-size: 24px;
+}
+
+#contactInfo h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2px auto 0 0;
+}
+
+#contactInfo ul{
+    font-size: 14px;
+    line-height: 32px;
+    margin: 13px auto 28px 0;
+    text-align: left;
+}
+
+footer{
+    height: 0;
+}
+
+}
+
 
