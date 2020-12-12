@@ -25,6 +25,10 @@ body{
     top: 0;
     text-align: center;
   }
+
+  #divNavlinks{
+
+  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -443,6 +447,27 @@ footer{
     }
 
 @media screen and (min-width: 768px){
+    #navbar {
+        left: 50%;
+        width: 180px;
+        margin-left: 180px;
+        text-align: left;
+      }
+      
+      #divNavlinks{
+          margin: 56px auto 36px auto;
+      }
+
+      .topnav a {
+        display: block;
+        margin: 12px auto 0 49px;
+        padding: 0;
+        font-family: Karla;
+        font-size: 17.5px;
+        letter-spacing: 0.02em;
+      }
+
+
     .container{
         width: 720px;
     }
@@ -595,6 +620,26 @@ footer{
 }
 
 @media screen and (min-width: 992px){
+    #navbar {
+        left: 50%;
+        width: 240px;
+        margin-left: 180px;
+        text-align: left;
+      }
+      
+      #divNavlinks{
+          margin: 96px auto 52px auto;
+      }
+
+      .topnav a {
+        display: block;
+        margin: 20px auto 0 79px;
+        padding: 0;
+        font-family: Karla;
+        font-size: 17.5px;
+        letter-spacing: 0.02em;
+      }
+
     .container{
         width: 960px;
     }
@@ -755,43 +800,25 @@ footer{
 
 @media screen and (min-width: 1200px){
 
-    #myTopnav {
-        background-color: #F2AD8C;
-        overflow: hidden;
-        position: fixed;
-        width: 100vw;
-        top: 0;
-        text-align: center;
+    #navbar {
+        left: 50%;
+        width: 285px;
+        margin-left: 285px;
+        text-align: left;
       }
       
-      /* Style the links inside the navigation bar */
+      #divNavlinks{
+          margin: 110px auto 59px auto;
+      }
+
       .topnav a {
-        display: inline-block;
-        color: #f2f2f2;
-        padding: 32px 36px 32px 36px;
-        text-decoration: none;
-        font-family: Karla;
+        display: block;
+        margin: 25px auto 0 95px;
+        padding: 0;
         font-size: 20px;
-        line-height: auto;
-        letter-spacing: 0.02em;
-        color: #EFF2F3;
-        text-transform: uppercase;
+        letter-spacing: 0.03em;
       }
-      
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        color: white;
-      }
-      
-      /* Add an active class to highlight the current page */
-      .topnav a.active {
-        text-decoration: underline !important;
-      }
-      
-      /* Hide the link that should open and close the topnav on small screens */
-      .topnav .icon {
-        display: none;
-      }
+    
     
     .container{
         width: 1140px;
@@ -800,6 +827,7 @@ footer{
     #sectionAbout{
         overflow: hidden;
         height: 100vh;
+        background-position-y: -150px;
         background-size: 100vw;
     }
     
