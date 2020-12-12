@@ -9,11 +9,12 @@ body{
 
 #aboutSection{
     background: #EFF2F3;
-    background-image: url(/Desert.png);
+    background-image: url(./Desert.png);
     background-position: bottom;
     background-position-y: -100px;
     background-size: 100vw;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 #menu{
