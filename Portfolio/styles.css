@@ -33,20 +33,19 @@ body{
   /* Style the links inside the navigation bar */
   .topnav a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #EFF2F3;
     padding: 14px 24px 14px 24px;
     text-decoration: none;
     font-family: Karla;
     font-size: 17.5px;
     line-height: 20px;
     letter-spacing: 0.02em;
-    color: #EFF2F3;
     text-transform: uppercase;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    color: white;
+    font-weight: 500;
   }
   
   /* Add an active class to highlight the current page */
@@ -65,13 +64,13 @@ body{
     .topnav a.icon {
       float: right;
       display: block;
-      color: #f2f2f2;
+      color: #EFF2F3;
     }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+  @media screen and (max-width: 767px) {
+    .topnav.responsive {position: fixed;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -83,7 +82,6 @@ body{
       text-align: left;
     }
   }
-
 
 /*About Section*/
 
@@ -156,7 +154,7 @@ h2{
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(51, 68, 76, 0.8);
+    color: rgba(51, 68, 76, 0.85);
 }
 
 .btnSeeMore{
@@ -177,7 +175,7 @@ h2{
     text-transform: uppercase;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.085em;
+    letter-spacing: 0.03em;
 }
 
 .btnSeeMore a{
@@ -186,7 +184,7 @@ h2{
 }
 
 .btnSeeMore:hover{
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 .imgProject{
@@ -201,7 +199,7 @@ h2{
 /*Contact Section*/
 #sectionContact{
     padding: 1px 0 0 0;
-    background-image: url(./Desert.png);
+    background-image: url(./Desertfaded.png);
     background-position: bottom;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -233,11 +231,17 @@ form h3{
 }
 
 input, textarea{
-    width: 320px;
+    width: 288px;
     margin-top: 16px;
     border: none;
     padding: 0;
     background: #EFF2F3;
+    outline: none;
+    color: rgba(51, 68, 76, 0.85);
+    padding: 0 16px 0 16px;
+    font-size: 14px;
+    line-height: 24px;
+    Font-family: Lora;
 }
 
 input{
@@ -252,13 +256,10 @@ textarea{
     font-family: Lora;
     font-size: 14px;
     line-height: 32px;
-    color: rgba(51, 68, 76, 0.8);
-    padding: 0 16px 0 16px;
+    color: rgba(51, 68, 76, 0.6);
+    padding: 0;
 }
 
-textarea::placeholder{
-    padding-top: 8px;
-}
 
 #btnSend{
     display: block;
@@ -277,12 +278,12 @@ textarea::placeholder{
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.085em;
+    letter-spacing: 0.03em;
     color: #33444C;
 }
 
 #btnSend:hover{
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 #infoContact{
@@ -316,7 +317,7 @@ h4{
     font-family: Lora;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(51, 68, 76, 0.8);
+    color: rgba(51, 68, 76, 0.85);
 }
 
 footer{
@@ -331,6 +332,7 @@ footer{
     #sectionAbout{
         height: 100vh;
         background-size: 100vw;
+        background-position-y: -40px;
     }
     
     #nameAndAbout{
@@ -358,7 +360,7 @@ footer{
         font-family: Lora;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(51, 68, 76, 0.8);
+        color: rgba(51, 68, 76, 0.85);
     }
     
     .blockProject{
@@ -379,7 +381,6 @@ footer{
 
     #sectionContact{
         padding: 1px 0 0 0;
-        background-image: url(./Desert.png);
         background-position: bottom;
         background-size: 100vw;
         background-repeat: no-repeat;
@@ -406,7 +407,7 @@ footer{
     }
     
     input, textarea{
-        width: 450px;
+        width: 418px;
     }
     
     textarea{
@@ -453,10 +454,10 @@ footer{
         margin-left: 180px;
         text-align: left;
       }
-      
-      #divNavlinks{
-          margin: 56px auto 36px auto;
-      }
+
+    #divNavlinks{
+        margin: 56px auto 36px auto;
+    }
 
       .topnav a {
         display: block;
@@ -467,7 +468,33 @@ footer{
         letter-spacing: 0.02em;
       }
 
+      .horizontal{
+        left: 0 !important;
+        background: #EFF2F3 !important;
+        position: fixed;
+        width: 100vw !important;
+        margin: 0 !important;
+    }
 
+    .horizontal div{
+        margin: 0 auto 0 auto !important;
+        display: flex;
+        width: 516px;
+        height: 64px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .horizontal a{
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #33444C !important;
+        font-size: 16px;
+    }
+
+    .horizontal a.icon {
+        display: none !important;
+      }
     .container{
         width: 720px;
     }
@@ -476,6 +503,7 @@ footer{
         overflow: hidden;
         height: 704px;
         background-size: 100vw;
+        background-position: bottom;
     }
     
     #nameAndAbout{
@@ -540,7 +568,6 @@ footer{
 
     #sectionContact{
         padding: 1px 0 0 0;
-        background-image: url(./Desert.png);
         background-position: bottom;
         background-size: 100vw;
         background-repeat: no-repeat;
@@ -572,11 +599,11 @@ footer{
     }
     
     input, textarea{
-        width: 300px;
+        width: 268px;
     }
     
     textarea{
-        height: 104px;
+        height: 128px;
     }
     
     ::placeholder{
@@ -587,7 +614,7 @@ footer{
         width: 300px;
         display: flex;
         flex-direction: column;
-        margin: 200px 0 0 0;
+        margin: 224px 0 0 0;
         text-align: left;
     }
     
@@ -638,6 +665,34 @@ footer{
         font-family: Karla;
         font-size: 17.5px;
         letter-spacing: 0.02em;
+      }
+
+      .horizontal{
+        left: 0 !important;
+        background: #EFF2F3 !important;
+        position: fixed;
+        width: 100vw !important;
+        margin: 0 !important;
+    }
+
+    .horizontal div{
+        margin: 0 auto 0 auto !important;
+        display: flex;
+        width: 516px;
+        height: 64px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .horizontal a{
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #33444C !important;
+        font-size: 16px;
+    }
+
+    .horizontal a.icon {
+        display: none !important;
       }
 
     .container{
@@ -712,7 +767,6 @@ footer{
 
     #sectionContact{
         padding: 1px 0 0 0;
-        background-image: url(./Desert.png);
         background-position: bottom;
         background-size: 100vw;
         background-repeat: no-repeat;
@@ -744,7 +798,7 @@ footer{
     }
     
     input, textarea{
-        width: 400px;
+        width: 368px;
     }
     
     textarea{
@@ -818,10 +872,41 @@ footer{
         font-size: 20px;
         letter-spacing: 0.03em;
       }
-    
+      
+      .horizontal{
+        left: 0 !important;
+        background: #EFF2F3 !important;
+        position: fixed;
+        width: 100vw !important;
+        margin: 0 !important;
+    }
+
+    .horizontal div{
+        margin: 0 auto 0 auto !important;
+        display: flex;
+        width: 516px;
+        height: 72px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .horizontal a{
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #33444C !important;
+        font-size: 18px;
+    }
+
+    .horizontal a.icon {
+        display: none !important;
+      }
+
     
     .container{
         width: 1140px;
+        padding: 1px 0 0 0;
+        margin: -1px auto 0 auto;
+        overflow: auto;
     }
 
     #sectionAbout{
@@ -896,7 +981,6 @@ footer{
     }
 
     #sectionContact{
-        background-image: url(./Desert.png);
         background-position: bottom;
         background-size: 100vw;
         background-repeat: no-repeat;
@@ -928,9 +1012,13 @@ footer{
     }
     
     input, textarea{
-        width: 570px;
+        width: 538px;
         height: 56;
         margin: 32px 0 0 0;
+        font-family: Lora;
+        font-size: 18px;
+        line-height: 32px;
+    
     }
     
     textarea{
@@ -946,7 +1034,7 @@ footer{
     }
 
     #infoContact{
-        width: 400px;
+        width: 380px;
         display: flex;
         flex-direction: column;
         margin: 370px 0 0 0;
